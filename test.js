@@ -3,7 +3,7 @@ let playRound = () => {
   let compSelection =
     compChoices[Math.floor(Math.random() * compChoices.length)];
   let playerSelection = prompt("What do you play?").toLowerCase();
-  console.log(compSelection, playerSelection);
+
   if (playerSelection == compSelection) {
     return "It's a tie";
   } else if (playerSelection == "rock" && compSelection == "scissors") {
@@ -36,6 +36,7 @@ let game = () => {
     } else {
       l++;
     }
+      console.log(l , t , w);
   }
   if (l > w) {
     return "Sorry, you lost";
