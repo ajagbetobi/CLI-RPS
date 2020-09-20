@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
+html {
+}
+
+body {
+  padding: 0;
+  border: 0;
+  font-family: "Lusitana", serif;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+.flex-center-column {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-center-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #482d59;
+}
+.choices {
+  margin: 10vh auto;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+.play-txt {
+  cursor: pointer;
+}
+.choice {
+  margin: auto 5vw;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in;
+  cursor: pointer;
+}
+
+.fas {
+  background: -webkit-linear-gradient(180deg, #ba73e6, #9d61c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.choice:hover {
+  transform: translateY(2px) scale(0.97);
+  transition: all 0.25s ease-in;
+}
