@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lusitana&display=swap");
-html {
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Subrayada:wght@700&display=swap");
 
 body {
   padding: 0;
   border: 0;
-  font-family: "Lusitana", serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   overflow: hidden;
   background: black;
@@ -25,7 +23,10 @@ body {
 }
 
 .heading {
-  color: #482d59;
+  font-family: "Montserrat Subrayada", sans-serif;
+  background: -webkit-linear-gradient(180deg, #0900ff, #030056);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .choices {
   margin: 10vh auto;
@@ -35,6 +36,7 @@ body {
   opacity: 0;
 }
 .play-txt {
+  text-align: center;
   cursor: pointer;
 }
 .choice {
@@ -47,7 +49,7 @@ body {
 }
 
 .fas {
-  background: -webkit-linear-gradient(180deg, #ba73e6, #9d61c2);
+  background: -webkit-linear-gradient(180deg, #0900ff, #030056);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -55,4 +57,9 @@ body {
 .choice:hover {
   transform: translateY(2px) scale(0.97);
   transition: all 0.25s ease-in;
+}
+footer,
+.play-txt,
+.rslt-txt {
+  color: white;
 }
