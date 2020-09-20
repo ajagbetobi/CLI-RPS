@@ -23,7 +23,7 @@ rockBtn.addEventListener("click", () => {
   gameCount++;
   playerSelection = "rock";
   if (gameCount > 5 && l > w) {
-    playBtn.textContent = "Sorry, you lost.";
+    playBtn.textContent = "Sorry, you lost this round.";
     playClick;
   } else if (gameCount > 5 && w > l) {
     playBtn.textContent = "Did you just beat me?!! Let's go again.";
