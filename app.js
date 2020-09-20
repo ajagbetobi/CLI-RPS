@@ -59,25 +59,25 @@ let playRound = (playerSelection) => {
     compChoices[Math.floor(Math.random() * compChoices.length)];
   if (playerSelection == compSelection) {
     d++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `It's a tie.`;
   } else if (playerSelection == "rock" && compSelection == "scissors") {
     w++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You win.`;
   } else if (playerSelection == "paper" && compSelection == "rock") {
     w++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You win.`;
   } else if (playerSelection == "scissors" && compSelection == "paper") {
     w++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You win.`;
   } else if (compSelection == "rock" && playerSelection == "scissors") {
     l++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You lose, haha!`;
   } else if (compSelection == "paper" && playerSelection == "rock") {
     l++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You lose, haha!`;
   } else if (compSelection == "scissors" && playerSelection == "paper") {
     l++;
-    resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
+    resultBtn.textContent = `You lose, haha!`;
   } else {
     resultBtn.textContent = `${l} loss(es) , ${w} win(s) , ${d} draw(s)`;
   }
